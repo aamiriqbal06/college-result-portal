@@ -15,10 +15,14 @@
     }
   </style>
   <script>
-    function checkResult() {
-      // Always go to result2.html
-      window.location.href = "result1.html";
-    }
+   <script>
+  function checkResult() {
+    // Give access to result page (for all inputs)
+    sessionStorage.setItem("access_granted", "yes");
+    window.location.href = "result1.html";
+  }
+</script>
+
   </script>
 </head>
 <body>
